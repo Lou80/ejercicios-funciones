@@ -23,6 +23,16 @@ function compararNumeros(numero1, numero2) {
     }
 }
 
+function mostrarElNumeroMasGrande(numero1, numero2) {
+    if (compararNumeros(numero1,numero2) > 0) {
+        return 'El número '+ numero1 + ' es más grande que '+ numero2;
+    } else if (compararNumeros(numero1, numero2) < 0) {
+        return 'El número '+ numero2 + ' es más grande que ' + numero1;
+    } else {
+        return 'Los dos números son iguales';
+    }
+}
+
 console.log( mostrarElNumeroMasGrande(1, 5) ); // El número 5 es más grande que 1
 console.log( mostrarElNumeroMasGrande(63, 27) ); // El número 63 es más grande que 27
 console.log( mostrarElNumeroMasGrande(1, 1) ); // Los dos números son iguales
